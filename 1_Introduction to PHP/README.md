@@ -100,11 +100,6 @@ You can write PHP inside an HTML file:
 ```
 
 ---
-Sure! I'll add the topics on **Constants** and **Datatype** examples.
-
-Here’s the updated version:
-
----
 
 ## 1.8 Variables, Data Types, and Constants
 ### Declaring Variables:
