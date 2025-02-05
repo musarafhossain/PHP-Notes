@@ -1,5 +1,7 @@
 PHP is a vast language with many topics to cover. To learn PHP from **basic to professional**, I have structured the course into **15 in-depth chapters**:
 
+[Notes](https://musarafhossain.github.io/PHP-Notes/)
+
 ### **PHP Full Course Outline**  
 
 ### **🔹 Beginner Level**
