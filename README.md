@@ -6,7 +6,7 @@ PHP is a vast language with many topics to cover. To learn PHP from **basic to p
 
 ### **🔹 Beginner Level**
 1️⃣ [**Introduction to PHP** (History, Syntax, Installation, First Script, Variables, Data Types, Superglobals)](https://musarafhossain.github.io/PHP-Notes/1_Introduction%20to%20PHP/)  
-2️⃣ **Operators and Expressions** (Arithmetic, Assignment, Comparison, Logical, Bitwise, Increment/Decrement, Ternary, String Operators)  
+2️⃣ [**Operators and Expressions** (Arithmetic, Assignment, Comparison, Logical, Bitwise, Increment/Decrement, Ternary, String Operators)](https://musarafhossain.github.io/PHP-Notes/2_Operators%20and%20Expressions%20in%20PHP)  
 3️⃣ **Control Structures** (If-Else, Switch, Loops - For, While, Do-While, Foreach, Break & Continue)  
 4️⃣ **Functions in PHP** (User-defined Functions, Parameters, Return Values, Default & Variable Arguments, Recursive Functions)  
 5️⃣ **Arrays in PHP** (Indexed, Associative, Multidimensional, Array Functions, Sorting)  
