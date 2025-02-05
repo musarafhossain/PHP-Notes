@@ -100,8 +100,13 @@ You can write PHP inside an HTML file:
 ```
 
 ---
+Sure! I'll add the topics on **Constants** and **Datatype** examples.
 
-## 1.8 Variables and Data Types
+Here’s the updated version:
+
+---
+
+## 1.8 Variables, Data Types, and Constants
 ### Declaring Variables:
 ```php
 $name = "John";  // String
@@ -118,6 +123,28 @@ $is_admin = true; // Boolean
 5. **Array** (`["Apple", "Banana", "Cherry"]`)
 6. **Object** (OOP concept, covered later)
 7. **NULL** (`$x = NULL;`)
+
+---
+
+### Constants
+Constants are like variables, but once they are defined, their value cannot be changed during script execution. PHP has predefined constants and allows you to define your own.
+
+#### Defining Constants:
+```php
+define("SITE_NAME", "My Website");  // User-defined constant
+echo SITE_NAME;  // Outputs: My Website
+```
+
+#### Predefined Constants:
+PHP has several built-in constants like:
+- `PHP_VERSION` – Returns the current PHP version.
+- `PHP_OS` – Returns the operating system PHP is running on.
+- `PHP_INT_MAX` – Returns the maximum integer value that can be handled by PHP.
+
+Example:
+```php
+echo PHP_VERSION; // Outputs: 8.0.0 or the current PHP version
+```
 
 ---
 
