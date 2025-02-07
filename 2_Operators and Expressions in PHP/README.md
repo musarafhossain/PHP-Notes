@@ -60,26 +60,49 @@ echo $a; // Output: 15
 ## **2.4 Comparison Operators**
 Used to compare values and return `true` or `false`.
 
-| Operator | Description          | Example (`$a = 10`, `$b = 5`) | Output |
-|----------|----------------------|-------------------------------|--------|
-| `==`     | Equal                | `$a == $b`                     | `false` |
-| `===`    | Identical (Same value & type) | `$a === "10"` | `false` |
-| `!=`     | Not equal            | `$a != $b`                     | `true`  |
-| `<>`     | Not equal            | `$a <> $b`                     | `true`  |
-| `!==`    | Not identical        | `$a !== "10"`                  | `true`  |
-| `>`      | Greater than         | `$a > $b`                      | `true`  |
-| `<`      | Less than            | `$a < $b`                      | `false` |
-| `>=`     | Greater than or equal | `$a >= 10`                     | `true`  |
-| `<=`     | Less than or equal   | `$a <= 5`                      | `false` |
+| Operator | Description                | Example (`$a = 10`, `$b = 5`) | Output |
+|----------|----------------------------|-------------------------------|--------|
+| `==`     | Equal                      | `$a == $b`                     | `false` |
+| `===`    | Identical (Same value & type) | `$a === "10"`               | `false` |
+| `!=`     | Not equal                  | `$a != $b`                     | `true`  |
+| `<>`     | Not equal                  | `$a <> $b`                     | `true`  |
+| `!==`    | Not identical              | `$a !== "10"`                  | `true`  |
+| `>`      | Greater than               | `$a > $b`                      | `true`  |
+| `<`      | Less than                  | `$a < $b`                      | `false` |
+| `>=`     | Greater than or equal      | `$a >= 10`                     | `true`  |
+| `<=`     | Less than or equal         | `$a <= 5`                      | `false` |
+| `<=>`    | Spaceship (Comparison)     | `$a <=> $b`                    | `1`    |
 
 ### **Example:**
 ```php
 $a = 10;
+$b = 5;
+
+echo ($a <=> $b);  // Output: 1 (because $a is greater than $b)
+
+$c = 5;
+$d = 5;
+
+echo ($c <=> $d);  // Output: 0 (because $c is equal to $d)
+
+$e = 3;
+$f = 5;
+
+echo ($e <=> $f);  // Output: -1 (because $e is less than $f)
+
+$a = 10;
 $b = "10";
 
 echo ($a == $b);  // Output: true (Only compares values)
-echo ($a === $b); // Output: false (Compares value and type)
+echo ($a === $b); // Output: false (Compares value and 
 ```
+
+### **Explanation of `<=>` (Spaceship Operator):**
+- It compares two values.
+- Returns:
+  - `1` if the left operand is greater than the right operand.
+  - `0` if both operands are equal.
+  - `-1` if the left operand is less than the right operand.
 
 ---
 
