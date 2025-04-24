@@ -1,14 +1,10 @@
-PHP is a vast language with many topics to cover. To learn PHP from **basic to professional**, I have structured the course into **15 in-depth chapters**:
-
-[Notes](https://musarafhossain.github.io/PHP-Notes/)
-
 ### **PHP Full Course Outline**  
 
 ### **🔹 Beginner Level**
-1️⃣ [**Introduction to PHP** (History, Syntax, Installation, First Script, Variables, Data Types, Superglobals)](https://musarafhossain.github.io/PHP-Notes/1_Introduction%20to%20PHP/)  
-2️⃣ [**Operators and Expressions** (Arithmetic, Assignment, Comparison, Logical, Bitwise, Increment/Decrement, Ternary, String Operators)](https://musarafhossain.github.io/PHP-Notes/2_Operators%20and%20Expressions%20in%20PHP)  
-3️⃣ [**Control Structures** (If-Else, Switch, Loops - For, While, Do-While, Foreach, Break & Continue)](https://musarafhossain.github.io/PHP-Notes/3_Control%20Structures%20in%20PHP)  
-4️⃣ [**Functions in PHP** (User-defined Functions, Parameters, Return Values, Default & Variable Arguments, Recursive Functions)](https://musarafhossain.github.io/PHP-Notes/4_Functions%20in%20PHP)  
+1️⃣ [**Introduction to PHP**](https://github.com/musarafhossain/PHP-Notes/tree/main/1_Introduction%20to%20PHP)  
+2️⃣ [**Operators and Expressions**](https://musarafhossain.github.io/PHP-Notes/2_Operators%20and%20Expressions%20in%20PHP)  
+3️⃣ [**Control Structures**](https://musarafhossain.github.io/PHP-Notes/3_Control%20Structures%20in%20PHP)  
+4️⃣ [**Functions in PHP**](https://musarafhossain.github.io/PHP-Notes/4_Functions%20in%20PHP)  
 5️⃣ **Arrays in PHP** (Indexed, Associative, Multidimensional, Array Functions, Sorting)  
 
 ### **🔹 Intermediate Level**  
