@@ -8,8 +8,8 @@
 5️⃣ [**Variable**](https://github.com/musarafhossain/PHP-Notes/tree/main/5_Variable)   
 6️⃣ [**Data Types**](https://github.com/musarafhossain/PHP-Notes/tree/main/6_Data%20Types)  
 7️⃣ [**echo and print**](https://github.com/musarafhossain/PHP-Notes/tree/main/7_echo%20and%20print)  
-8️⃣ **here Document** (Session Management, Persistent Login with Cookies, Security Best Practices)  
-9️⃣ **File Handling in PHP** (Reading/Writing Files, Uploading Files, Handling Directories)  
+8️⃣ [**here Document**](https://github.com/musarafhossain/PHP-Notes/tree/main/8_here%20Document)  
+9️⃣ [**Comments**]()  
 🔟 **Working with MySQL & PHP** (Connecting to MySQL, CRUD Operations, MySQLi vs PDO, Prepared Statements)  
 
 ### **🔹 Advanced Level**  
