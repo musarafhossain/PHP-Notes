@@ -5,7 +5,7 @@
 2️⃣ [**How PHP Works**](https://github.com/musarafhossain/PHP-Notes/tree/main/2_How%20PHP%20Works)  
 3️⃣ [**Development Environment**](https://github.com/musarafhossain/PHP-Notes/tree/main/3_Development%20Environment)  
 4️⃣ [**First Program**](https://github.com/musarafhossain/PHP-Notes/tree/main/4_First%20Program)  
-5️⃣ [**Variable**](https://github.com/musarafhossain/PHP-Notes/tree/main/5_Variable) 
+5️⃣ [**Variable**](https://github.com/musarafhossain/PHP-Notes/tree/main/5_Variable)   
 6️⃣ [**Data Types**](https://github.com/musarafhossain/PHP-Notes/tree/main/6_Data%20Types)  
 7️⃣ [**echo and print**] (https://github.com/musarafhossain/PHP-Notes/tree/main/7_echo%20and%20print)  
 8️⃣ **Sessions and Cookies** (Session Management, Persistent Login with Cookies, Security Best Practices)  
