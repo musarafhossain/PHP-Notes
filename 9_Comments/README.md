@@ -54,6 +54,6 @@ Starts with `/*` and ends with `*/`.
 ```php
 <?php
 // echo “Visit”;
-echo “Geekyshows”;
+echo “Musaraf Hossain”;
 ?>
 ```
