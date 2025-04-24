@@ -9,8 +9,8 @@
 6️⃣ [**Data Types**](https://github.com/musarafhossain/PHP-Notes/tree/main/6_Data%20Types)  
 7️⃣ [**echo and print**](https://github.com/musarafhossain/PHP-Notes/tree/main/7_echo%20and%20print)  
 8️⃣ [**here Document**](https://github.com/musarafhossain/PHP-Notes/tree/main/8_here%20Document)  
-9️⃣ [**Comments**]()  
-🔟 **Working with MySQL & PHP** (Connecting to MySQL, CRUD Operations, MySQLi vs PDO, Prepared Statements)  
+9️⃣ [**Comments**](https://github.com/musarafhossain/PHP-Notes/tree/main/9_Comments)  
+🔟 [**String Interpolation**]()  
 
 ### **🔹 Advanced Level**  
 1️⃣1️⃣ **Object-Oriented Programming (OOP) in PHP** (Classes, Objects, Constructors, Inheritance, Access Modifiers, Abstract & Interface)  
