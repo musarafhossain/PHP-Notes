@@ -12,7 +12,7 @@
 9️⃣ [**Comments**](https://github.com/musarafhossain/PHP-Notes/tree/main/9_Comments)  
 🔟 [**String Interpolation**](https://github.com/musarafhossain/PHP-Notes/tree/main/10_String%20Interpolation)   
 1️⃣1️⃣ [**Constant**](https://github.com/musarafhossain/PHP-Notes/tree/main/11_Constant)  
-1️⃣2️⃣ [**Operators**]()  
+1️⃣2️⃣ [**Operators**](https://github.com/musarafhossain/PHP-Notes/tree/main/12_Operators)  
 1️⃣3️⃣ [**Conditional Statement**]()  
 1️⃣4️⃣ [**Loops**]()  
 1️⃣5️⃣ [**Array**]()  
