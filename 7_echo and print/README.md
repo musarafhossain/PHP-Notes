@@ -67,4 +67,10 @@ print "Visit" . "Musaraf Hossain";        // Outputs "VisitMusaraf Hossain"
 print $name;                         // Outputs value of $name ("Musaraf Hossain")
 ```
 
-> ⚠️ **Note:** Unlike `echo`, `print` can only take **one argument** at a time.
+# print vs echo
+
+- echo has no return value while print is more like PHP function so it returns value, which is always set to 1.
+
+- echo can take multiple parameters while print can take one argument. 
+
+- echo is marginally faster than print.
