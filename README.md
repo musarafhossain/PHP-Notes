@@ -4,11 +4,9 @@
 1️⃣ [**Introduction to PHP**](https://github.com/musarafhossain/PHP-Notes/tree/main/1_Introduction%20to%20PHP)  
 2️⃣ [**How PHP Works**](https://github.com/musarafhossain/PHP-Notes/tree/main/2_How%20PHP%20Works)  
 3️⃣ [**Development Environment**](https://github.com/musarafhossain/PHP-Notes/tree/main/3_Development%20Environment)  
-4️⃣ [**First Program**](https://musarafhossain.github.io/PHP-Notes/4_Functions%20in%20PHP)  
-5️⃣ **Arrays in PHP** (Indexed, Associative, Multidimensional, Array Functions, Sorting)  
-
-### **🔹 Intermediate Level**  
-6️⃣ **Strings & String Manipulation** (String Functions, Regular Expressions, Case Changing, Searching, Replacing)  
+4️⃣ [**First Program**](https://github.com/musarafhossain/PHP-Notes/tree/main/4_First%20Program)  
+5️⃣ [**Variable**]() 
+6️⃣ [**Strings & String Manipulation**]()  
 7️⃣ **Forms & User Input** (Form Handling with GET/POST, Validation, Sanitization, File Upload)  
 8️⃣ **Sessions and Cookies** (Session Management, Persistent Login with Cookies, Security Best Practices)  
 9️⃣ **File Handling in PHP** (Reading/Writing Files, Uploading Files, Handling Directories)  
