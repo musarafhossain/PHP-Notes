@@ -10,13 +10,11 @@
 7️⃣ [**echo and print**](https://github.com/musarafhossain/PHP-Notes/tree/main/7_echo%20and%20print)  
 8️⃣ [**here Document**](https://github.com/musarafhossain/PHP-Notes/tree/main/8_here%20Document)  
 9️⃣ [**Comments**](https://github.com/musarafhossain/PHP-Notes/tree/main/9_Comments)  
-🔟 [**String Interpolation**]()  
-
-### **🔹 Advanced Level**  
-1️⃣1️⃣ **Object-Oriented Programming (OOP) in PHP** (Classes, Objects, Constructors, Inheritance, Access Modifiers, Abstract & Interface)  
+🔟 [**String Interpolation**](https://github.com/musarafhossain/PHP-Notes/tree/main/10_String%20Interpolation)   
+1️⃣1️⃣ [**Constant**]()  
 1️⃣2️⃣ **Error Handling & Debugging** (Try-Catch, Exception Handling, Logging Errors)  
 1️⃣3️⃣ **PHP and AJAX** (Asynchronous Requests, Fetch API, JSON Handling)  
 1️⃣4️⃣ **PHP Frameworks & MVC Architecture** (Introduction to Laravel, CodeIgniter, Slim)  
 1️⃣5️⃣ **Security & Performance Optimization** (SQL Injection, XSS, CSRF, Caching, Code Optimization, Best Practices)  
-
+### **🔹 Advanced Level** 
 By the end of this course, you will be able to build **secure, dynamic, and scalable PHP applications**. 🚀  
