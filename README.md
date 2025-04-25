@@ -15,12 +15,18 @@
 1️⃣2️⃣ [**Operators**](https://github.com/musarafhossain/PHP-Notes/tree/main/12_Operators)  
 1️⃣3️⃣ [**Conditional Statement**](https://github.com/musarafhossain/PHP-Notes/tree/main/13_Conditional%20Statement)  
 1️⃣4️⃣ [**Loops**](https://github.com/musarafhossain/PHP-Notes/tree/main/14_Loops)  
-1️⃣5️⃣ [**Array**]()  
+1️⃣5️⃣ [**Array**](https://github.com/musarafhossain/PHP-Notes/tree/main/15_Array)  
 1️⃣6️⃣ [**String**]()  
 1️⃣7️⃣ [**Function**]()  
 1️⃣8️⃣ [**File Handling**]()  
 
 ### **🔹 Advanced Level** 
 1️⃣9️⃣ [**Object Oriented Programming**]()  
+2️⃣0️⃣ [**include function**]()  
+2️⃣1️⃣ [**MySQLI**]()  
+2️⃣2️⃣ [**PHP Data Object (PDO)**]()  
+2️⃣3️⃣ [**Prepared Statements**]()  
+2️⃣4️⃣ [**Cookies**]()  
+2️⃣5️⃣ [**Session**]()  
 
 By the end of this course, you will be able to build **secure, dynamic, and scalable PHP applications**. 🚀  
