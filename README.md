@@ -14,7 +14,7 @@
 1️⃣1️⃣ [**Constant**](https://github.com/musarafhossain/PHP-Notes/tree/main/11_Constant)  
 1️⃣2️⃣ [**Operators**](https://github.com/musarafhossain/PHP-Notes/tree/main/12_Operators)  
 1️⃣3️⃣ [**Conditional Statement**](https://github.com/musarafhossain/PHP-Notes/tree/main/13_Conditional%20Statement)  
-1️⃣4️⃣ [**Loops**]()  
+1️⃣4️⃣ [**Loops**](https://github.com/musarafhossain/PHP-Notes/tree/main/14_Loops)  
 1️⃣5️⃣ [**Array**]()  
 1️⃣6️⃣ [**String**]()  
 1️⃣7️⃣ [**Function**]()  
