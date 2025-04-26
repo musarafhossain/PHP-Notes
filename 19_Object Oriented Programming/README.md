@@ -227,12 +227,386 @@ Destructor is called.
 ```
 ---
 
+## Inheritance 
 
+- The mechanism of deriving a new class from an old one is called inheritance or derivation. 
 
+![](/19_Object%20Oriented%20Programming/image1.png)
 
+- ### Super Class and Sub Class 
 
+    - The old class is referred to as the Super class and the new one is called the Sub class.
+    
+    - **Parent Class** - Base Class, or Super Class
+    - **Child Class** - Derived Class, Extended Class, or Sub Class
+    
+![](/19_Object%20Oriented%20Programming/image2.png)
 
+- ### Declaration of Child Class 
+```php
+class ChildClassName extends ParentClassName { 
+    members of Child class 
+}; 
+```
 
+- ### Example
+```php
+// Parent class
+class Employee {    
+    public $id; 
+    public $name; 
+    public $age; 
+    public $department_Name; 
+    public $salary; 
+    public $address; 
+    function displayName( ); 
+    function displayId( ); 
+    function raiseSalary($money); 
+}
 
+// Child class
+class Manager extends Employee { 
+    public $nameOfSecretary; 
+    function displaySecretaryName(); 
+    function raiseSalary($money); 
+ }
+```
 
+- ### Type of Inheritance
 
+    - Single Inheritance 
+    
+    - Multiple Inheritance ❌[ Not available in PHP ]
+    
+    - Multi-level Inheritance 
+    
+    - Hierarchical Inheritance 
+    
+- ### Single Inheritance 
+
+    - If a class is derived from one base class (Parent Class), it is called Single Inheritance. 
+
+    ![](/19_Object%20Oriented%20Programming/image3.png)
+    
+    - #### Syntax: -
+
+    ```php
+    class Father { 
+        members of class Father 
+    }; 
+
+    class Son extends Father { 
+        members of class Son 
+    }; 
+
+    ```
+    - #### Example: -
+    ```php
+    // Parent class
+    class Animal {
+        public function sound() {
+            echo "Animals make sounds.\n";
+        }
+    }
+
+    // Child class
+    class Dog extends Animal {
+        public function bark() {
+            echo "Dog barks: Woof! Woof!\n";
+        }
+    }
+
+    // Create object of Dog
+    $myDog = new Dog();
+
+    // Call methods
+    $myDog->sound(); // Inherited from Animal
+    $myDog->bark();  // Defined in Dog
+    ```
+    - #### Output: -
+    ```bash
+    Animals make sounds.
+    Dog barks: Woof! Woof!
+    ```
+- ### Multiple Inheritance ❌
+
+    - If a class is derived from more than one parent class, then it is called multiple inheritance. 
+    - In PHP, there is no multiple inheritance. 
+
+    ![](/19_Object%20Oriented%20Programming/image4.png)
+    
+- ### Multi-level Inheritance  
+
+    - In multi-level inheritance, the class inherits the feature of another derived class (Child Class). 
+
+    ![](/19_Object%20Oriented%20Programming/image5.png)
+    
+    - #### Syntax: -
+
+    ```php
+    class Father { 
+        members of class Father 
+    }; 
+    
+    class Son extends Father { 
+        members of class Son 
+    }; 
+    
+    class GrandSon extends Son { 
+        members of class GrandSon 
+    }; 
+    ```
+    - #### Example: -
+    ```php
+    // Grandparent class
+    class Animal {
+        public function eat() {
+            echo "Animals eat food.\n";
+        }
+    }
+
+    // Parent class (inherits from Animal)
+    class Dog extends Animal {
+        public function bark() {
+            echo "Dog barks: Woof! Woof!\n";
+        }
+    }
+
+    // Child class (inherits from Dog)
+    class Puppy extends Dog {
+        public function weep() {
+            echo "Puppy weeps: Whine... Whine...\n";
+        }
+    }
+
+    // Create object of Puppy
+    $myPuppy = new Puppy();
+
+    // Call methods
+    $myPuppy->eat();   // From Animal
+    $myPuppy->bark();  // From Dog
+    $myPuppy->weep();  // From Puppy
+    ```
+    - #### Output: -
+    ```bash
+    Animals eat food.
+    Dog barks: Woof! Woof!
+    Puppy weeps: Whine... Whine...
+    ```
+    - #### Multi-Level Inheritance with Constructors and Destructors
+        - Each class has its own constructor, and we use `parent::__construct()` to call the parent class's constructor.
+    ```php
+    // Grandparent class
+    class Animal {
+        public function __construct() {
+            echo "Animal constructor called.\n";
+        }
+
+        public function eat() {
+            echo "Animals eat food.\n";
+        }
+
+        public function __destruct() {
+            echo "Animal destructor called.\n";
+        }
+    }
+
+    // Parent class
+    class Dog extends Animal {
+        public function __construct() {
+            parent::__construct(); // Call Animal constructor
+            echo "Dog constructor called.\n";
+        }
+
+        public function bark() {
+            echo "Dog barks: Woof! Woof!\n";
+        }
+
+        public function __destruct() {
+            echo "Dog destructor called.\n";
+            parent::__destruct(); // Optional, but explicit
+        }
+    }
+
+    // Child class
+    class Puppy extends Dog {
+        public function __construct() {
+            parent::__construct(); // Call Dog constructor
+            echo "Puppy constructor called.\n";
+        }
+
+        public function weep() {
+            echo "Puppy weeps: Whine... Whine...\n";
+        }
+
+        public function __destruct() {
+            echo "Puppy destructor called.\n";
+            parent::__destruct(); // Optional, but shows chain
+        }
+    }
+
+    // Create object of Puppy
+    $myPuppy = new Puppy();
+
+    // Call methods
+    $myPuppy->eat();   // From Animal
+    $myPuppy->bark();  // From Dog
+    $myPuppy->weep();  // From Puppy
+    ```
+    - #### Output: -
+    ```bash
+    Animal constructor called.
+    Dog constructor called.
+    Puppy constructor called.
+    Animals eat food.
+    Dog barks: Woof! Woof!
+    Puppy weeps: Whine... Whine...
+    Puppy destructor called.
+    Dog destructor called.
+    Animal destructor called.
+    ```
+- ### Hierarchical Inheritance   
+
+    ![](/19_Object%20Oriented%20Programming/image6.png)
+    
+    - #### Syntax: -
+
+    ```php
+    class Father { 
+        members of class Father 
+    }; 
+    
+    class Son extends Father { 
+        members of class Son 
+    }; 
+    
+    class Daughter extends Father { 
+        members of class Daughter 
+    }; 
+    ```
+    - #### Example: -
+    ```php
+    // Parent class
+    class Animal {
+        public function eat() {
+            echo "Animal eats food.\n";
+        }
+    }
+
+    // First child class
+    class Dog extends Animal {
+        public function bark() {
+            echo "Dog barks: Woof!\n";
+        }
+    }
+
+    // Second child class
+    class Cat extends Animal {
+        public function meow() {
+            echo "Cat meows: Meow!\n";
+        }
+    }
+
+    // Create Dog object
+    $dog = new Dog();
+    $dog->eat();  // From Animal
+    $dog->bark(); // From Dog
+
+    echo "\n"; // Just to separate outputs
+
+    // Create Cat object
+    $cat = new Cat();
+    $cat->eat();  // From Animal
+    $cat->meow(); // From Cat
+    ```
+    - #### Output: -
+    ```bash
+    Animal eats food.
+    Dog barks: Woof!
+
+    Animal eats food.
+    Cat meows: Meow!
+    ```
+    - #### Hierarchical Inheritance with Constructors and Destructors
+    ```php
+    // Parent class
+    class Animal {
+        public function __construct() {
+            echo "Animal constructor called.\n";
+        }
+
+        public function eat() {
+            echo "Animal eats food.\n";
+        }
+
+        public function __destruct() {
+            echo "Animal destructor called.\n";
+        }
+    }
+
+    // First child class
+    class Dog extends Animal {
+        public function __construct() {
+            parent::__construct();
+            echo "Dog constructor called.\n";
+        }
+
+        public function bark() {
+            echo "Dog barks: Woof!\n";
+        }
+
+        public function __destruct() {
+            echo "Dog destructor called.\n";
+            parent::__destruct();
+        }
+    }
+
+    // Second child class
+    class Cat extends Animal {
+        public function __construct() {
+            parent::__construct();
+            echo "Cat constructor called.\n";
+        }
+
+        public function meow() {
+            echo "Cat meows: Meow!\n";
+        }
+
+        public function __destruct() {
+            echo "Cat destructor called.\n";
+            parent::__destruct();
+        }
+    }
+
+    // Create Dog object
+    echo "--- Dog Object ---\n";
+    $dog = new Dog();
+    $dog->eat();
+    $dog->bark();
+
+    echo "\n";
+
+    // Create Cat object
+    echo "--- Cat Object ---\n";
+    $cat = new Cat();
+    $cat->eat();
+    $cat->meow();
+    ```
+    - #### Output: -
+    ```bash
+    --- Dog Object ---
+    Animal constructor called.
+    Dog constructor called.
+    Animal eats food.
+    Dog barks: Woof!
+    Dog destructor called.
+    Animal destructor called.
+
+    --- Cat Object ---
+    Animal constructor called.
+    Cat constructor called.
+    Animal eats food.
+    Cat meows: Meow!
+    Cat destructor called.
+    Animal destructor called.
+    ```
