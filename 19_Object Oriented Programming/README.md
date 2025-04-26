@@ -1,16 +1,16 @@
 # Object Oriented Programming
 
-## Class
+# Class
 
 - A PHP class is a group of values with a set of operations to manipulate this values. Classes facilitate modularity and information hiding. Classes are used to define a new data type.
 
-- ### Rules
+- ## Rules
 
     - The class name can be any valid label.
     - It can't be PHP reserved word.
     - A valid class name starts with a letter or underscores, followed by any number of letter, numbers or underscores.
     
-- ### Syntax
+- ## Syntax
 ```php
 class Classname{
     var $variable_name;         #Data Member / Properties
@@ -25,7 +25,7 @@ class Classname{
 }
 ```
 
-- ### Example
+- ## Example
 ```php
 class Mobile{
       var $model;        // global variable
@@ -76,16 +76,16 @@ class Owner{
 ```
 ---
 
-## Object
+# Object
 
 - Object is class type variable. Each time you create an object of a class a copy of each variables defined in the class is created. In other words you can say that each object of a class has its own copy of data members defined in the class. Member functions have only one copy and shared by all the objects of that class. All the objects may have their own value of variables. 
 
 - The new Operator is used to create an object.
-- ### Syntax
+- ## Syntax
 ```php
 $object_name = new class_name;  
 ```
-- ### Creating Object
+- ## Creating Object
 ```php
 class Mobile{
      public $model;
@@ -97,7 +97,7 @@ class Mobile{
 $samsung = new Mobile;
 ```
 
-- ### Accessing class member using object
+- ## Accessing class member using object
 
     - `->` operator is used to access class member using object.
 
@@ -113,11 +113,11 @@ $samsung->showModel('A8');
 ```
 ---
 
-## `$this` Keyword  
+# `$this` Keyword  
 
 - The `$this` Keyword points to the current object. You use `$this` followed by the `->` operator. In Addition, you omit the `$` in front of the property.
 
-    - ### Syntax
+    - ## Syntax
 ```php    
 $this->model;
 ```
@@ -136,7 +136,7 @@ $samsung->showModel('A8');
 ```
 ---
 
-## Constructor
+# Constructor
 
 - PHP supports a special type of method called constructor for initializing an object when it is created. This is known as automatic initialization of objects. 
 - A class constructor if defined is called whenever a program creates an object of that class. 
@@ -144,7 +144,7 @@ $samsung->showModel('A8');
 - A constructor should have the same name as the class.
 - Constructor have a special name in PHP `__construct`
 
-- ### Declaration of Constructors 
+- ## Declaration of Constructors 
 
 ```php
 class Student{
@@ -161,12 +161,12 @@ class Student{
     }
 }
 ```
-- ### Type of Constructor 
+- ## Type of Constructor 
 
     - Default Constructor 
     - Parameterized Constructor 
     
-- ### Default Constructor 
+- ## Default Constructor 
 
 - A default constructor is a constructor that has no parameters.
 ```php
@@ -177,7 +177,7 @@ class Student{
 }
 $stu = new Student;
 ```
-- ### Parameterized Constructor 
+- ## Parameterized Constructor 
 
 - The constructors that can take the arguments are called parameterized constructors.
 
@@ -193,12 +193,12 @@ $stu = new Student(10);
 - Once you create your own constructor, the default constructor is no longer accessible.
 ---
 
-## Destructors 
+# Destructors 
 
 - In PHP destructor are called when you explicitly destroy an object or when all references to the object go out of scope.  
 - Destructor have a special name in PHP `__destruct`.
 - Destructor do not have any arguments.
-- ### Syntax:-
+- ## Syntax:-
 ```php
 class MyClass {
     public function __construct() {
@@ -218,7 +218,7 @@ class MyClass {
 $obj = new MyClass();
 $obj->sayHello();
 ```
-- ### Output
+- ## Output
 
 ```bash
 Constructor is called.
@@ -227,13 +227,13 @@ Destructor is called.
 ```
 ---
 
-## Inheritance 
+# Inheritance 
 
 - The mechanism of deriving a new class from an old one is called inheritance or derivation. 
 
 ![](/19_Object%20Oriented%20Programming/image1.png)
 
-- ### Super Class and Sub Class 
+- ## Super Class and Sub Class 
 
     - The old class is referred to as the Super class and the new one is called the Sub class.
     
@@ -242,14 +242,14 @@ Destructor is called.
     
 ![](/19_Object%20Oriented%20Programming/image2.png)
 
-- ### Declaration of Child Class 
+- ## Declaration of Child Class 
 ```php
 class ChildClassName extends ParentClassName { 
     members of Child class 
 }; 
 ```
 
-- ### Example
+- ## Example
 ```php
 // Parent class
 class Employee {    
@@ -272,7 +272,7 @@ class Manager extends Employee {
  }
 ```
 
-- ### Type of Inheritance
+- ## Type of Inheritance
 
     - Single Inheritance 
     
@@ -282,13 +282,13 @@ class Manager extends Employee {
     
     - Hierarchical Inheritance 
     
-- ### Single Inheritance 
+- ## Single Inheritance 
 
     - If a class is derived from one base class (Parent Class), it is called Single Inheritance. 
 
     ![](/19_Object%20Oriented%20Programming/image3.png)
     
-    - #### Syntax: -
+    - ### Syntax: -
 
     ```php
     class Father { 
@@ -300,7 +300,7 @@ class Manager extends Employee {
     }; 
 
     ```
-    - #### Example: -
+    - ### Example: -
     ```php
     // Parent class
     class Animal {
@@ -323,25 +323,25 @@ class Manager extends Employee {
     $myDog->sound(); // Inherited from Animal
     $myDog->bark();  // Defined in Dog
     ```
-    - #### Output: -
+    - ### Output: -
     ```bash
     Animals make sounds.
     Dog barks: Woof! Woof!
     ```
-- ### Multiple Inheritance ❌
+- ## Multiple Inheritance ❌
 
     - If a class is derived from more than one parent class, then it is called multiple inheritance. 
     - In PHP, there is no multiple inheritance. 
 
     ![](/19_Object%20Oriented%20Programming/image4.png)
     
-- ### Multi-level Inheritance  
+- ## Multi-level Inheritance  
 
     - In multi-level inheritance, the class inherits the feature of another derived class (Child Class). 
 
     ![](/19_Object%20Oriented%20Programming/image5.png)
     
-    - #### Syntax: -
+    - ### Syntax: -
 
     ```php
     class Father { 
@@ -356,7 +356,7 @@ class Manager extends Employee {
         members of class GrandSon 
     }; 
     ```
-    - #### Example: -
+    - ### Example: -
     ```php
     // Grandparent class
     class Animal {
@@ -387,13 +387,13 @@ class Manager extends Employee {
     $myPuppy->bark();  // From Dog
     $myPuppy->weep();  // From Puppy
     ```
-    - #### Output: -
+    - ### Output: -
     ```bash
     Animals eat food.
     Dog barks: Woof! Woof!
     Puppy weeps: Whine... Whine...
     ```
-    - #### Multi-Level Inheritance with Constructors and Destructors
+    - ### Multi-Level Inheritance with Constructors and Destructors
         - Each class has its own constructor, and we use `parent::__construct()` to call the parent class's constructor.
     ```php
     // Grandparent class
@@ -453,7 +453,7 @@ class Manager extends Employee {
     $myPuppy->bark();  // From Dog
     $myPuppy->weep();  // From Puppy
     ```
-    - #### Output: -
+    - ### Output: -
     ```bash
     Animal constructor called.
     Dog constructor called.
@@ -465,11 +465,11 @@ class Manager extends Employee {
     Dog destructor called.
     Animal destructor called.
     ```
-- ### Hierarchical Inheritance   
+- ## Hierarchical Inheritance   
 
     ![](/19_Object%20Oriented%20Programming/image6.png)
     
-    - #### Syntax: -
+    - ### Syntax: -
 
     ```php
     class Father { 
@@ -484,7 +484,7 @@ class Manager extends Employee {
         members of class Daughter 
     }; 
     ```
-    - #### Example: -
+    - ### Example: -
     ```php
     // Parent class
     class Animal {
@@ -519,7 +519,7 @@ class Manager extends Employee {
     $cat->eat();  // From Animal
     $cat->meow(); // From Cat
     ```
-    - #### Output: -
+    - ### Output: -
     ```bash
     Animal eats food.
     Dog barks: Woof!
@@ -527,7 +527,7 @@ class Manager extends Employee {
     Animal eats food.
     Cat meows: Meow!
     ```
-    - #### Hierarchical Inheritance with Constructors and Destructors
+    - ### Hierarchical Inheritance with Constructors and Destructors
     ```php
     // Parent class
     class Animal {
@@ -592,7 +592,7 @@ class Manager extends Employee {
     $cat->eat();
     $cat->meow();
     ```
-    - #### Output: -
+    - ### Output: -
     ```bash
     --- Dog Object ---
     Animal constructor called.
