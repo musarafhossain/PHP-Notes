@@ -757,4 +757,112 @@ class Son extends Father{
 }
 $objS = new Son(10, 20);
 ```
+# statiic keyword
 
+## Static Variable
+
+- A variable within a function reset every time when we call it. In case if we need, variable values to remain save even outside the function then we have to use static keyword.
+
+### Example
+```php
+    function display() 
+    {
+        static $a = 0 ;	 	// Static Variable
+        $a++;
+        return $a;
+    } 
+    echo "Calling Static variable's Function <br />";
+    echo display() . "<br />";		// $a = 1
+    echo display() . "<br />";		// $a = 2
+    echo display() . "<br />";		// $a = 3
+?>
+```
+
+## Static Properties
+
+### Example 
+```php
+Class Student{
+    public static $name;  //define static property
+    public function disp($nm) {
+        self::$name = $nm; 
+        echo “My Name is ” . Self::$name ; 
+    }
+}
+// accessing static property outside class
+Student::$name="Jhon Doe";
+$stu = new Student;
+$stu->disp("Muusaraf Hossain");
+```
+
+## Static Methods
+
+- Static methods are class methods they are meant to call on the class, not on an object.
+- Call the method without having to first create an object of that class. 
+
+## How to create Static Method ?
+
+- static keyword in front of the function is used to create static method.
+### Example
+```php 
+public static function display(){ 
+    echo “Hello World!”; 
+}
+```
+
+## How to Call static method ?
+- As we know object is not required to call a static method so we can call static method using it’s class name followed by scope resolution operator(:\:) followed by function name.
+### Example
+```php 
+Class Student {
+    public static function display(){
+        echo "Hello World";   
+    }
+}
+
+Student::display();
+```
+
+## Passing Value to Static Method
+
+### Example
+```php
+Class Student {
+    public static function display($nm){
+    echo "Musaraf" . $nm ; }
+}
+Student::display("Hossain");
+```
+
+## Static Properties inside static Method
+- `self` keyword is used to access the static properties inside static Method. 
+- Static properties cannot be accessed through the object using the arrow operator `->`. `$this` is not available inside the method declared as static. Static method cannot access non-static properties.
+### Example
+```php
+class Father{
+    // Non-static Property
+    public $a = 10; 
+    public static $b= 10;
+    public static function disp(){
+        // Non-Static Property can't be accesed inside static Method
+        echo $this->a;  
+        echo self::$b;
+    }
+} 
+Father::disp();
+```
+
+> **Note:** Non Static Property or Method can't be accessed inside Static Method using `$this`
+
+### Example
+```php
+class Father{
+    public static $a= 10;
+    public function disp(){
+        // accessing static property inside non-static method  
+        echo self::$a; 
+    }
+} 
+$obj = new Father;
+$obj->disp();
+```
