@@ -610,6 +610,7 @@ Cat meows: Meow!
 Cat destructor called.
 Animal destructor called.
 ```
+---
 
 # Visibility Mode/ Access Modifiers
 
@@ -757,7 +758,9 @@ class Son extends Father{
 }
 $objS = new Son(10, 20);
 ```
-# statiic keyword
+---
+
+# `static` keyword
 
 ## Static Variable
 
@@ -866,3 +869,45 @@ class Father{
 $obj = new Father;
 $obj->disp();
 ```
+---
+
+# `abstract` keyword
+
+## Abstract Class
+- A class that is declared with `abstract` keyword, is known as abstract class in PHP. It can have abstract and non-abstract methods. It needs to be extended and its method implemented. objects of an abstract class cannot be created.
+
+```php
+abstract class Test{
+
+}
+```
+
+## Abstract Method
+- A method that is declared as abstract and does not have implementation is known as abstract method.
+
+```php
+abstract function disp();	//no body and abstract
+```
+### Example
+```php
+abstract class Father {
+    abstract function disp();
+}
+
+Class Son extends Father{
+    public function disp (){
+        echo "Abstract defined";
+    }
+}
+```
+
+## Rules
+- We cannot use abstract classes to instantiate objects directly.
+- objects of an abstract class cannot be created. 
+- The abstract methods of an abstract class must be defined in its subclass.
+- If there is any abstract method in a class, that class must be abstract.
+- A class can be abstract without having abstract method.
+- It is not necessary to declare all methods abstract in a abstract class.
+- We cannot declare abstract constructors or abstract static methods.
+- If you are extending any abstract class that have abstract method, you must either provide the implementation of the method or make this class abstract.
+
