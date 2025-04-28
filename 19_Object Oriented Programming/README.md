@@ -911,3 +911,54 @@ Class Son extends Father{
 - We cannot declare abstract constructors or abstract static methods.
 - If you are extending any abstract class that have abstract method, you must either provide the implementation of the method or make this class abstract.
 
+Sure! Here’s the full explanation with an **example** added so you can understand everything clearly:
+
+---
+
+# `const` keyword
+
+- These are constants designed to be used by **classes**, not **objects**.
+- Once you initialize a `const` variable, you **can’t reinitialize** it (it’s fixed forever).
+- `const` keyword is used to create **class constants**.
+  
+Example of declaring:
+```php
+const mark = 101;
+```
+
+- Access **inside** the class using the `self` keyword, like:
+  ```php
+  self::mark;
+  ```
+- Access **outside** the class using the **class name**, like:
+  ```php
+  ClassName::mark;
+  ```
+
+### Example:
+
+```php
+class Student {
+    const MARKS = 101;
+
+    public function showMarks() {
+        // Accessing inside the class using self::
+        echo "Marks inside class: " . self::MARKS . "<br>";
+    }
+}
+
+// Accessing outside the class using class name
+echo "Marks outside class: " . Student::MARKS . "<br>";
+
+// Creating object
+$student = new Student();
+$student->showMarks();
+```
+
+### Output:
+```
+Marks outside class: 101
+Marks inside class: 101
+```
+
+---
