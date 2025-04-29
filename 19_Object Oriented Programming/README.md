@@ -1165,3 +1165,39 @@ class Daughter extends Father {
 - Only inherited methods can be overridden.
 - Final and static methods cannot be overridden.
 - The overriding method must have same argument list.
+
+# `final` keyword
+- `final` keyword is used to create final method or final class.
+- A final method cannot be overridden in child class.
+- A final class cannot be inherited, It means we can not create sub class of a final class.
+
+## Final Method
+### Example
+```php
+Class Father {
+    function display(){
+         echo "You can override me because I am not final";
+    }
+    final function show(){
+        echo "I am final so you cannot override me";
+    }
+}
+class Son extends Father {
+    function display(){
+         echo "Yea I overrided";
+    }
+}
+```
+
+## Final Class
+### Example
+```php
+final class Father {
+    function display(){
+         echo "Final";
+    }
+}
+
+class Son extends Father { // ❌ Error: Cannot extend final class
+}
+```
