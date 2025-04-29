@@ -1138,6 +1138,7 @@ $obj->disp();
 - A class can inherit only one abstract class and multiple inheritance is not possible for abstract class but A class can implement more than one interface and can achieve multiple inheritance.
 - If a class contains even a single abstract method that class must be declared as abstract.
 - In an abstract class, you can defined as well as It’s body methods but in the interface you can only define your methods.
+---
 
 # Method Overriding 
 - Overriding refers to the ability of a subclass to re-implement a method inherited from a superclass.
@@ -1165,6 +1166,7 @@ class Daughter extends Father {
 - Only inherited methods can be overridden.
 - Final and static methods cannot be overridden.
 - The overriding method must have same argument list.
+---
 
 # `final` keyword
 - `final` keyword is used to create final method or final class.
@@ -1200,4 +1202,34 @@ final class Father {
 
 class Son extends Father { // ❌ Error: Cannot extend final class
 }
+```
+---
+
+# Comparing Objects
+- `==` Two objects are equal if they have the same attributes and value and are objects of the same class. 
+### Example
+```php
+class Person {
+    public $name;
+
+    public function __construct($name) {
+        $this->name = $name;
+    }
+}
+
+$p1 = new Person("Alice");
+$p2 = new Person("Alice");
+
+var_dump($p1 == $p2); // true: same class and same property values
+```
+
+- `===` objects are identical if and only if they refer to the same object.
+### Example
+```php
+$p1 = new Person("Alice");
+$p2 = $p1;
+$p3 = new Person("Alice");
+
+var_dump($p1 === $p2); // true: both variables point to the same object
+var_dump($p1 === $p3); // false: different instances, even with same data
 ```
