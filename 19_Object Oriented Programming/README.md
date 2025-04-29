@@ -962,3 +962,179 @@ Marks inside class: 101
 ```
 
 ---
+
+# Interface
+
+- An interface is like a class with nothing but abstract methods.
+- All methods of an interface must be public. It is also possible to declare a constructor in an interface. 
+- It’s possible for interface to have constants(can not be overridden by a class/interface that inherits them). 
+- `interface` keyword is used to create an interface in php.
+
+![](/19_Object%20Oriented%20Programming/image7.png)
+
+- Interface don’t have instance variables.
+- All methods of an interface is abstract.
+- All methods of an interface are automatically (by default) public.
+- We can not use the private and protected specifiers when declaring member of an interface. 
+- We can not create object of interface. 
+- More than one interface can be implemented in a single class.
+- A class implements an interface using `implements` keyword. 
+- If a class is implementing an interface it has to define all the methods given in that interface.
+- If a class does not implement all the methods declared in the interface, the class must be declared abstract. 
+- The method signature for the method in the class must match the method signature as it appears in the interface. 
+- Any class can use an interface’s constants from the name of the interface like `Test::roll`. 
+- Classes that implement an interface can treat the constants as they were inherited. 
+- An interface can extend (inherit) an interface. 
+- One interface can inherit another interface using `extends` keywords. 
+- An Interface can not extends classes. 
+
+## Defining Interface
+### Syntax
+```php
+interface interface_name {
+    const properties;
+    Method;
+} 
+```
+### Example
+```php
+interface Father{
+    const a;
+    public function disp();
+} 
+```
+## Extending Interface
+
+- An interface can extend (inherit) an interface. 
+- One interface can inherit another interface using `extends` keywords. 
+- An Interface can not extends classes. 
+
+### One Interface extending one Interface
+![](/19_Object%20Oriented%20Programming/image8.png)
+### Syntax
+```php
+interface interface_name1{
+    const properties;
+    Methods;
+}
+
+interface interface_name extends interface_name1
+{
+    const properties;
+    Method;
+}
+```
+
+### One interface can extend more than one interface
+![](/19_Object%20Oriented%20Programming/image9.png)
+### Syntax
+```php
+interface Father{
+
+}
+
+interface Mother{
+
+}
+
+interface Son extends Father, Mother{
+
+}
+```
+## Implementing Class
+- More than one interface can be implemented in a single class.
+- A class implements an interface using `implements` keyword. 
+- If a class is implementing an interface it has to define all the methods given in that interface.
+- If a class does not implement all the methods declared in the interface, the class must be declared abstract. 
+- The method signature for the method in the class must match the method signature as it appears in the interface. 
+- Any class can use an interface’s constants from the name of the interface like `Test::roll`. 
+- Classes that implement an interface can treat the constants as they were inherited. 
+
+### one interface can be implemented in a single class
+![](/19_Object%20Oriented%20Programming/image10.png)
+### Syntax
+```php
+interface interface_name{
+    const properties;
+    Methods;
+}
+
+class class_name implements interface_name{
+    Properties;
+    Methods;
+}
+```
+### Example
+```php
+interface Father{
+    const mark = 101;
+    public function disp();
+}
+
+class Son implements Father{
+    public function disp()
+    {
+        echo Father::mark;
+    }
+}
+```
+### More than one interface can be implemented in a single class
+![](/19_Object%20Oriented%20Programming/image11.png)
+### Syntax
+```php
+interface Father{
+
+}
+
+interface Mother{
+
+}
+
+class Son implements Father, Mother{
+
+}
+```
+## Extends and Implements together
+### Syntax
+```php
+class Father{
+    properties;
+    Methods;
+}
+interface Mother{
+    const properties;
+    Methods;
+}
+class Son extends Father implements Mother{
+    properties;
+    Methods; 
+}
+```
+### Example
+```php
+class Father {
+    public $sci = 101;
+}
+interface Mother{
+    const math = 102;
+    public function disp();
+}
+interface Uncle{
+
+}
+class Son extends Father implements Mother, Uncle  {
+    public function disp() {
+        echo $this->sci;
+        echo Mother::math;
+    }
+}
+$obj = new Son;
+$obj->disp();
+```
+
+## Interface vs Abstract Class
+- An abstract class can have only abstract methods or only non-abstract methods or both, but All methods of an interface are abstract by default.
+- An abstract class can declare properties/methods with access specifier, but interface can declare only constant properties(no other type properites) and methods are by default abstract and public.
+- A class can inherit only one abstract class and multiple inheritance is not possible for abstract class but A class can implement more than one interface and can achieve multiple inheritance.
+- If a class contains even a single abstract method that class must be declared as abstract.
+- In an abstract class, you can defined as well as It’s body methods but in the interface you can only define your methods.
