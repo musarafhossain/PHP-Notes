@@ -1138,3 +1138,30 @@ $obj->disp();
 - A class can inherit only one abstract class and multiple inheritance is not possible for abstract class but A class can implement more than one interface and can achieve multiple inheritance.
 - If a class contains even a single abstract method that class must be declared as abstract.
 - In an abstract class, you can defined as well as It’s body methods but in the interface you can only define your methods.
+
+# Method Overriding 
+- Overriding refers to the ability of a subclass to re-implement a method inherited from a superclass.
+### Example
+```php
+class Father { 
+    function disp(){ 
+        echo "Super Class"; 
+    }
+}
+
+class Son extends Father { 
+    function disp(){ 
+        echo "Son Class"; 
+    }
+}
+
+class Daughter extends Father { 
+    function disp(){ 
+        echo "Daughter Class"; 
+    }
+}
+```
+
+- Only inherited methods can be overridden.
+- Final and static methods cannot be overridden.
+- The overriding method must have same argument list.
